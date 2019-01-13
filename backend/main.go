@@ -23,8 +23,7 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/kelseyhightower/ping"
-
+	"github.com/Sheshagiri/ping"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/health"
 	healthpb "google.golang.org/grpc/health/grpc_health_v1"
@@ -32,7 +31,7 @@ import (
 )
 
 const (
-	version = "v2"
+	version = "v1"
 )
 
 var (

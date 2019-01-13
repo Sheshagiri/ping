@@ -1,5 +1,5 @@
 #!/bin/bash
 ./build
-docker build -t gcr.io/hightowerlabs/frontend:v2 .
-gcloud docker -- push gcr.io/hightowerlabs/frontend:v2
+docker build -t quay.io/sheshagiri0/frontend:v1 .
+docker push quay.io/sheshagiri0/frontend:v1
 rm frontend

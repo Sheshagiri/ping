@@ -31,7 +31,7 @@ func httpHealthServer(server *health.Server) http.Handler {
 }
 
 func (h *healthHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
-	hcr, err := h.healthServer.Check(context.Background(), &healthpb.HealthCheckRequest{""})
+	hcr, err := h.healthServer.Check(context.Background(), &healthpb.HealthCheckRequest{})
 	if err != nil {
 		log.Println("Error checking gRPC server health", err)
 		w.WriteHeader(http.StatusServiceUnavailable)
