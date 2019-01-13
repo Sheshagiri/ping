@@ -1,5 +1,5 @@
 #!/bin/bash
 ./build
-docker build -t quay.io/sheshagiri0/frontend:v1 .
-docker push quay.io/sheshagiri0/frontend:v1
+docker build -t quay.io/sheshagiri0/frontend:v2 .
+docker push quay.io/sheshagiri0/frontend:v2
 rm frontend

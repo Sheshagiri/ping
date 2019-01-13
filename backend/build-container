@@ -1,5 +1,5 @@
 #!/bin/bash
 ./build
-docker build -t quay.io/sheshagiri0/backend:v1 .
-docker push quay.io/sheshagiri0/backend:v1
+docker build -t quay.io/sheshagiri0/backend:v2 .
+docker push quay.io/sheshagiri0/backend:v2
 rm backend
